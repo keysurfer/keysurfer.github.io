@@ -2,11 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KeySurfer</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #clicks li {
+            display: inline-block;
+            margin-right: 60px;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
-<p>Hello world!</p>
+<div class="container">
+    <h1>KeySurfer Getting Started</h1>
+    <p class="lead">Thank you for downloading KeySurfer.</p>
+    <p>This page will quickly teach you how to use KeySurfer.</p>
 
+    <ol>
+        <li>Press
+            <pre>shift+space</pre>
+            to active the KeySurfer window. It will appear at the bottom of your screen
+        </li>
+        <li>Type "link" into the KeySurfer search bar.</li>
+        <li>Notice how it hightlights this <a href="#" id="link1">link</a>? Press enter to click it.
+        </li>
+    </ol>
+
+    <div id="section2" style="display: none;">
+        <hr>
+        <h2>Good job! Let's learn how to handle multiple links now</h2>
+        <ol>
+            <li>Type "click" into the KeySurfer search bar.</li>
+            <li>Notice how each link starting with click is highlighted?</li>
+            <li>Use the up/down arrow keys to choose "click3" and then press enter.</li>
+        </ol>
+
+        <div class="alert alert-warning" style="display:none"></div>
+
+        <ul id="clicks">
+            <li><a href="#" id="click1">Click 1</a></li>
+            <li><a href="#" id="click2">Click 2</a></li>
+            <li><a href="#" id="click3">Click 3</a></li>
+            <li><a href="#" id="click4">Click 4</a></li>
+        </ul>
+    </div>
+
+    <div id="section3" style="display: none;">
+        <hr>
+        <h2>You did it!</h2>
+        <p>If you don't want to use the up/down arrow keys to change elements you can also press alt
+            and then a number to click that labelled link.</p>
+    </div>
+
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
